@@ -4,7 +4,7 @@
 
 --SHOW POSTS WITH HIGHEST ENGAGEMENT 
 
-USE [LinkedIn_Growth_Analytics];
+USE [LinkedIn_Growth_Analytics];  
 SELECT *, 
 ROW_NUMBER () OVER ( ORDER BY likes DESC )AS ROWNUMER 
 from [dbo].[posts];
